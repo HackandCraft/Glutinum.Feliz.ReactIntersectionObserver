@@ -50,7 +50,8 @@ let private Component () =
                         ]
 
                         prop.ref props.ref_case1
-                        prop.text $"Intersection block (is in view: %b{props.inView})"
+                        prop.text
+                            $"Intersection block (is in view: %b{props.inView})"
                     ]
                 )
             ]
