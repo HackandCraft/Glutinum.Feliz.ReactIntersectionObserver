@@ -1,0 +1,15 @@
+node_modules
+
+.ionide/
+paket-files
+/.paket/load/
+
+bin/
+obj/
+*.fs.js
+*.fs.js.map
+
+.fake
+
+fable_modules/
+.DS_Store

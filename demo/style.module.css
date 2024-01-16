@@ -1,0 +1,50 @@
+:root {
+    --blue: #6faff3;
+    --grey: #6c757d;
+    --green: #28a745;
+    --border-radius: 5px;
+    --text-color: #fff;
+
+    --spacing-1: 5px;
+    --spacing-2: 10px;
+    --spacing-3: 15px;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+}
+
+.block {
+    background-color: var(--blue);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: var(--border-radius);
+    margin: var(--spacing-3);
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.top-block {
+    /* Force the middle block to bit out of the view */
+    height: 110vh;
+}
+
+.middle-block {
+    height: 250px;
+    background-color: var(--grey);
+}
+
+.middle-block.is-in-view {
+    background-color: var(--green);
+}
+
+.bottom-block {
+    /* Force the middle block to bit out of the view */
+    height: 110vh;
+}

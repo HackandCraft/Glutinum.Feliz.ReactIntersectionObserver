@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "fable-css-modules": "^1.4.1",
+    "nodemon": "^3.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-intersection-observer": "^9.5.3",
+    "vite": "^5.0.11"
+  }
+}

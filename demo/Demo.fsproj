@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="CssModules.fs" />
+    <Compile Include="Hook.fs" />
+    <Compile Include="RenderProps.fs" />
+    <Compile Include="PlainChild.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../src/Glutinum.Feliz.ReactIntersectionObserver.fsproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Fable.Core" />
+    <PackageReference Include="Feliz" />
+  </ItemGroup>
+</Project>

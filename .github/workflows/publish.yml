@@ -1,0 +1,31 @@
+name: Publish
+
+# Workflow responsible for publishing the package to NuGet
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '8.0.x'
+
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v4
+
+    - uses: pnpm/action-setup@v2
+      with:
+        version: 8
+
+    - name: Publish
+      env:
+        HNC_NUGET_API_KEY: '${{ vars.HNC_NUGET_API_KEY }}'
+      run: ./build.sh -p Publish
