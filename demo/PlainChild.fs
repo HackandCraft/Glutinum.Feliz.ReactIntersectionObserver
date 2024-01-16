@@ -42,10 +42,7 @@ let private Component () =
             InView [
                 inView.``as`` ReactIntersectionObserverAs.div
                 inView.threshold threshold
-                inView.onChange (
-                    fun inView _ ->
-                        setIsInView inView
-                )
+                inView.onChange (fun inView _ -> setIsInView inView)
                 inView.children (
                     Html.div [
                         prop.classes [

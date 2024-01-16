@@ -9,16 +9,14 @@ open type Glutinum.Feliz.ReactIntersectionObserver.Exports
 let private classes: CssModules.style = importDefault "./style.module.css"
 
 [<ReactComponent>]
-let IntersectionBlock (threshold : float) =
+let IntersectionBlock (threshold: float) =
     let isInView, setIsInView = React.useState false
+
     let inViewInfo =
         useInView (
             IntersectionOptions(
                 threshold = threshold,
-                onChange =
-                    (fun inView _ ->
-                        setIsInView inView
-                    )
+                onChange = (fun inView _ -> setIsInView inView)
             )
         )
 

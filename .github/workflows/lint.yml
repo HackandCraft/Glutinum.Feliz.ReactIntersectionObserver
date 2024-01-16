@@ -1,7 +1,9 @@
-name: Publish
+name: Lint
 
 on:
   push:
+    branches: [ master ]
+  pull_request:
     branches: [ master ]
 
 jobs:
@@ -23,7 +25,5 @@ jobs:
       with:
         version: 8
 
-    - name: Publish
-      env:
-        HNC_NUGET_API_KEY: '${{ vars.HNC_NUGET_API_KEY }}'
-      run: ./build.sh -p Publish
+    - name: Lint
+      run: ./build.sh -p Lint

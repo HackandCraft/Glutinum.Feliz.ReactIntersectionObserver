@@ -14,35 +14,34 @@ type style =
     /// Binding for <c>container</c> class
     /// </summary>
     [<Emit("$0[\"container\"]")>]
-    abstract container : string
+    abstract container: string
 
     /// <summary>
     /// Binding for <c>block</c> class
     /// </summary>
     [<Emit("$0[\"block\"]")>]
-    abstract block : string
+    abstract block: string
 
     /// <summary>
     /// Binding for <c>top-block</c> class
     /// </summary>
     [<Emit("$0[\"top-block\"]")>]
-    abstract topBlock : string
+    abstract topBlock: string
 
     /// <summary>
     /// Binding for <c>middle-block</c> class
     /// </summary>
     [<Emit("$0[\"middle-block\"]")>]
-    abstract middleBlock : string
+    abstract middleBlock: string
 
     /// <summary>
     /// Binding for <c>is-in-view</c> class
     /// </summary>
     [<Emit("$0[\"is-in-view\"]")>]
-    abstract isInView : string
+    abstract isInView: string
 
     /// <summary>
     /// Binding for <c>bottom-block</c> class
     /// </summary>
     [<Emit("$0[\"bottom-block\"]")>]
-    abstract bottomBlock : string
-
+    abstract bottomBlock: string
