@@ -13,3 +13,5 @@ obj/
 
 fable_modules/
 .DS_Store
+
+demo/CssModules.fs
