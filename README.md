@@ -2,6 +2,8 @@
 
 Binding for [react-intersection-observer](https://github.com/thebuilder/react-intersection-observer)
 
+[![NuGet](https://img.shields.io/nuget/v/Glutinum.Feliz.ReactIntersectionObserver.svg)](https://www.nuget.org/packages/Glutinum.Feliz.ReactIntersectionObserver/)
+
 ## Usage
 
 ### Hooks
