@@ -120,10 +120,19 @@ pipeline "Publish" {
     Stages.lint
     Stages.femtoValidation
 
-    stage "Build" { run "dotnet pack -c Release src" }
+    let releaseFolder = "src/bin/Release"
+
+    stage "Build" {
+        run (fun _ ->
+            if Directory.Exists(releaseFolder) then
+                Directory.Delete(releaseFolder, true)
+        )
+
+        run "dotnet pack -c Release src"
+    }
 
     stage "Publish packages to NuGet" {
-        workingDir "src/bin/Release"
+        workingDir releaseFolder
 
         run (fun ctx ->
             let key = ctx.GetEnvVar options.HNC_NUGET_API_KEY.Name
