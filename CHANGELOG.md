@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## 1.1.0 - 2024-02-07
+
+### Changed
+
+* Release the package with F# source in `fable` folder
+* Don't include an `FSharp.Core` reference in the package dependencies
+
 ## 1.0.0 - 2024-01-16
 
 ### Added

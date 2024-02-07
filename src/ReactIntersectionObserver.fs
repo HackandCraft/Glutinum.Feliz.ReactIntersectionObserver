@@ -10,7 +10,7 @@ type State =
     abstract entry: IntersectionObserverEntry option with get, set
 
 [<Global>]
-type IntersectionOptions [<ParamObject; Emit("$0")>] private () =
+type IntersectionOptions private () =
 
     [<ParamObject; Emit("$0")>]
     new(?root: Element,
